@@ -19,7 +19,7 @@ namespace NLayer.Repository
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-            //her class library bir assemblydir
+            //her class library bir assemblydir 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); //çalıştığımız yeri alır.
             //modelBuilder.ApplyConfiguration(new CategoryConfiguration()); tek tek verebiliriz
 
