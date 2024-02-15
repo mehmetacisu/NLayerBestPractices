@@ -43,6 +43,7 @@ namespace NLayer.API.Controllers
 
 		//GET api/product/5
 		//süslü içinde belirtmezsek QueryString üzerinde bekler 
+		[ServiceFilter(typeof(NotFoundFilter<Product>))]
 		[HttpGet("{id}")]
 		public async Task<IActionResult> GetById(int id)
 		{
